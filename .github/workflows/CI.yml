@@ -18,3 +18,5 @@ jobs:
               run: cargo build
             - name: Test
               run: cargo test
+            - name: Install
+              run: make install
