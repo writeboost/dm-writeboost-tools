@@ -12,8 +12,6 @@ jobs:
             - uses: actions/checkout@v2
             - name: Install Rust
               uses: dtolnay/rust-toolchain@stable
-              with:
-                  components: rustfmt
             - name: Compile
               run: cargo build
             - name: Test
