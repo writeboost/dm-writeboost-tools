@@ -11,8 +11,7 @@ Rustup is the best way to install Rust toolset.
 
 https://github.com/rust-lang-nursery/rustup.rs
 
-Then `cargo install --path writeboost-cli` to install **writeboost-cli**.
-(For older version, `cargo install --path wbtools`)
+Then `make install` to install **writeboost-cli**.
 
 ## Video
 
@@ -48,7 +47,7 @@ Look into the metadata in the cache device.
 * `writeboost-cli meta /dev/cache 0` dumps the superblock metadata (ID 0 is special)
 * `writeboost-cli meta /dev/cache 1` dumps the metadata of segment ID 1
 
-### wbremove
+### remove
 
 Remove a WB device
 
@@ -56,7 +55,7 @@ Remove a WB device
   all cache blocks. This is the way Dmirty Smirnov's writeboost script suggests. (Recommended)  
 * `writeboost-cli remove wbdev --nowriteback` remove a WB device without writing back all cache blocks.
 
-### wbstatus
+### status
 
 Pretty-print the status line.
 
